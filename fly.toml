@@ -1,0 +1,12 @@
+# fly.toml app configuration generated for Discord bot
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+
+app = "my-strike-bot"
+primary_region = "waw"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[[services]]
+  internal_port = 8080
+  processes = ["app"]
